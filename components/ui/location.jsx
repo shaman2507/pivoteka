@@ -1,0 +1,18 @@
+import Link from 'next/link';
+import { IoLocationSharp } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
+
+const LocationLink = ({ className, onClick }) => {
+    return (
+        <div className='flex'>
+            <Link className={`${className}`} href="https://maps.app.goo.gl/3vWqMVqiBofgAFiu9" onClick={onClick}>
+                <IoLocationSharp fill="FCA500" size="24" />
+            </Link>
+            <Link className={`${className}`} href="tel:+382222222222" onClick={onClick}>
+                <FaPhone fill="FCA500" size="24" />
+            </Link>
+        </div>
+    );
+};
+
+export default LocationLink;

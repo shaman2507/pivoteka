@@ -6,7 +6,7 @@ export const inter = Inter({
     variable: '--font-inter',
 });
 
-export const Lora = Lora({
+export const lora = Lora({
     subsets: ['latin'],
     weight: ['500', '600'],
     variable: '--font-lora',

@@ -4,12 +4,12 @@ import { FaPhone } from "react-icons/fa6";
 
 const LocationLink = ({ className, onClick }) => {
     return (
-        <div className='flex'>
+        <div className='flex items-center gap-[24px]'>
             <Link className={`${className}`} href="https://maps.app.goo.gl/3vWqMVqiBofgAFiu9" onClick={onClick}>
-                <IoLocationSharp fill="FCA500" size="24" />
+                <IoLocationSharp color="FCA500" size="24" />
             </Link>
             <Link className={`${className}`} href="tel:+382222222222" onClick={onClick}>
-                <FaPhone fill="FCA500" size="24" />
+                <FaPhone color="FCA500" size="24" />
             </Link>
         </div>
     );

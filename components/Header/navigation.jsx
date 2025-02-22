@@ -1,14 +1,23 @@
 import React from "react";
+import Link from 'next/link';
 import initTranslations from '../../app/i18n';
 
 const Navigation = async ({ lng }) => {
   const { t } = await initTranslations(lng, ['header']);
   return (
     <nav className="hidden">
-      <p>{t('header.about-us')}</p>
-      <p>{t('header.beer')}</p>
-      <p>{t('header.promotions')}</p>
-      <p>{t('header.contacts')}</p>
+      <Link href="#">
+        {t('header.about-us')}
+      </Link>
+      <Link href="#">
+        {t('header.beer')}
+      </Link>
+      <Link href="#">
+        {t('header.promotions')}
+      </Link>
+      <Link href="#">
+        {t('header.contacts')}
+      </Link>
     </nav>
   );
 };

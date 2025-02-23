@@ -10,7 +10,11 @@ const i18nNamespaces = ['translation'];
 export default async function Home({ params: { lng }}) {
   return (
     <>
-      <Header lng={lng} />
+      <div className="flex flex-col h-screen backdrop-opacity-55 bg-[url('/hero-foto.webp')]">
+        <Header lng={lng} />  
+      </div> 
     </>
   );
 }
+
+

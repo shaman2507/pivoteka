@@ -14,8 +14,12 @@ export default {
     },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        black: {
+          600: '#1A1A1A',
+        },
+        orange: {
+          600: '#fca500',
+        },
       },
     },
   },

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useDisableBodyScroll, useClickOutside } from '@/hooks/hooks';
 import { IoCloseOutline } from "react-icons/io5";
 
 const BurgerMenu = ({ isVisible, closeBurgerMenu }) => {
@@ -12,11 +13,11 @@ const BurgerMenu = ({ isVisible, closeBurgerMenu }) => {
     useClickOutside(isVisible, burgerMenuRef, closeBurgerMenu);
 
     return (
-        <div className={`z-20 w-[100vw] h-[100vh] absolute top-0 right-0 transition-all duration-300  ${
+        <div className={`z-20 w-full h-full absolute top-0 right-0 transition-all duration-300 ${
             isVisible ? 'translate-x-0' : 'translate-x-[100%]'
         }`}>
-            <div ref={burgerMenuRef} className={`w-[100%] h-[100vh] py-7 px-4 absolute top-0 right-0 bg-white md:w-[360px] ${
-                isVisible ? 'translate-x-0' : 'translate-x-[100%]'
+            <div ref={burgerMenuRef} className={`w-[100%] h-full py-7 px-4 absolute top-0 right-0 bg-white md:w-[360px] ${
+                isVisible ? 'translate-x-0' : 'right-[-100%]'
             } transition-all duration-300`}>
                 <button
                     onClick={closeBurgerMenu}

@@ -6,10 +6,20 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      md: '768px',
+      lg: '960px',
+      xl: '1280px',
+      xlr: '1440px',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        black: {
+          600: '#1A1A1A',
+        },
+        orange: {
+          600: '#fca500',
+        },
       },
     },
   },

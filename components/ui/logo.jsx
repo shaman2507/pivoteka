@@ -10,7 +10,7 @@ const Logo = ({ className, onClick }) => {
                 fill
                 sizes="100px"
                 alt="Pivoteka logo"
-                className="py-[6px] px-[12px] object-contain"
+                className=" object-contain"
             />
         </Link>
     );

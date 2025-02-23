@@ -5,8 +5,8 @@ import Navigation from "./navigation";
 
 const Header = ({ lng }) => {
     return (
-        <header>
-            <div className="min-w-[328px] mx-auto px-[16px] py-[12px] flex justify-between">
+        <header className="mb-[12px] z-50 top-0 left-0 w-full ">
+            <div className="min-w-[328px] mx-auto  flex justify-between">
                 <Navigation lng={lng} />
                 <LocationLink />
                 <Logo className={'w-[80px] h-[80px]'} />

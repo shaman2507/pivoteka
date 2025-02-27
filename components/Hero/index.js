@@ -10,7 +10,7 @@ const Hero = async ({ lng }) => {
                 <h1 className={`${lora.className} text-center font-medium text-5xl text-orange-600`}>
                     {t('hero.title')}
                 </h1>
-                <HeroQuotes />
+                <HeroQuotes lng={lng} />
             </div>
         </section>
     );

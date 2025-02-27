@@ -1,5 +1,9 @@
 {
     "hero": {
-        "title": "NAJBOLJE PIVO SA DOSTAVOM"
+        "title": "NAJBOLJE PIVO SA DOSTAVOM",
+        "quote-1": "Ispunjavamo vaš dan ukusom i vašu čašu pivom",
+        "quote-2": "Preko 100 vrhunskih vrsta piva",
+        "quote-3": "Otkrijte svet pivskog zanatstva!",
+        "quote-4": "Tradicija, ukus, elegancija — u svakoj kapi!"
     }
 }

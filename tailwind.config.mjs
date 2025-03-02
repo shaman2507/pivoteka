@@ -20,6 +20,9 @@ export default {
         orange: {
           600: '#fca500',
         },
+        white: {
+          500: '#ebebeb',
+        },
       },
     },
   },

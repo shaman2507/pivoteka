@@ -10,7 +10,7 @@ const i18nNamespaces = ['translation'];
 
 export default async function Home({ params: { lng }}) {
   return (
-    <div className="flex flex-col px-[16px] py-[12px] h-[1000px] bg-[url('/hero.webp')]">
+    <div className="flex flex-col px-[16px] py-[12px] h-[1000px] bg-[url('/hero.webp')] xl:px-[80px]">
       <Header lng={lng} />
       <Hero lng={lng} />
     </div>

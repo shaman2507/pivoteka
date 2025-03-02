@@ -22,7 +22,7 @@ const ChangeLang = async ({ lng, className, onClick }) => {
     // const currentLang = langList.find(lang => lang.value === currentLocale);
 
     return (
-        <div className='xl:my-auto text-white-500 border-b' >
+        <div className='hidden xl:flex my-auto text-white-500 border-b' >
             <Link className={`${className}`} href={`/${lng}`} onClick={onClick}>
                 {t('langSwitcher')}
             </Link>

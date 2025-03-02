@@ -5,7 +5,7 @@ import initTranslations from '../../app/i18n';
 const Navigation = async ({ lng }) => {
   const { t } = await initTranslations(lng, ['header']);
   return (
-    <nav className="hidden">
+    <nav className="hidden xl:flex my-auto gap-[20px] text-white-500">
       <Link href="#">
         {t('header.about-us')}
       </Link>

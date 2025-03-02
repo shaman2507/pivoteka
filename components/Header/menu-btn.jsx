@@ -11,7 +11,7 @@ const MenuBtn = () => {
     };
 
     return (
-        <div className="flex my-auto w-[48px] h-[48px] rounded-full bg-orange-600">
+        <div className="flex my-auto w-[48px] h-[48px] rounded-full bg-orange-600 xl:hidden">
             <button onClick={() => {
                 setVisibleBurgerMenu(true);
             }}

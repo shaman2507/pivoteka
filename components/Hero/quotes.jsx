@@ -9,14 +9,17 @@ const HeroQuotes = async ({ lng }) => {
     return (
         <section className='flex flex-col'>
             <div className='mt-[24px] flex justify-between'>
-                <div className='flex w-[206px] items-center'>
-                    <p className={`${inter.className} font-medium italic text-base text-white`}>
+                <div className='flex w-[206px] items-center md:hidden'>
+                    <p className={`${inter.className} font-medium italic text-base text-white-500`}>
                         {t('hero.quote-1')}
                     </p>
                 </div>    
-                <Social />
+                <Social className={'md:hidden'}/>
             </div>
-            <HeroQuotesList lng={lng} />
+            <div className='flex '>
+                <HeroQuotesList lng={lng} />
+                <Social className={'hidden md:flex'} />
+            </div>
         </section>
     );
 };

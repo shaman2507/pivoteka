@@ -8,7 +8,7 @@ const HeroQuotes = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['hero']);
     return (
         <section className='flex flex-col'>
-            <div className='mt-[24px] flex justify-between'>
+            <div className='mt-[24px] flex md:hidden justify-between'>
                 <div className='flex w-[206px] items-center md:hidden'>
                     <p className={`${inter.className} font-medium italic text-base text-white-500`}>
                         {t('hero.quote-1')}

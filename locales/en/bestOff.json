@@ -1,0 +1,37 @@
+{
+    "bestOff": {
+        "title": "BEST OFFERS",
+        "beerCardBavic": {
+            "cardTitle": "Bavik Super Wit 0,25L",
+            "cardPrice": "5,50 EUR/0,25"
+        },
+        "beerCardKasteel": {
+            "cardTitle": "Kasteel Cuvee De Chateau 0.33l",
+            "cardPrice": "9,00 EUR/0,33"
+        },
+        "beerCardDuchesse": {
+            "cardTitle": "Duchesse Cherry 0,33L",
+            "cardPrice": "6,50 EUR/0,33"
+        },
+        "beerCardFullers": {
+            "cardTitle": "Fullers London pride 0.5 l",
+            "cardPrice": "6,00 EUR/0,5"
+        },
+        "beerCardStone": {
+            "cardTitle": "Stone Ipa 0.355 l",
+            "cardPrice": "6,50 EUR/0,35"
+        },
+        "beerCardAyinger": {
+            "cardTitle": "Ayinger Jahrhundert bier 0.5l",
+            "cardPrice": "5,00 EUR/0,5"
+        },
+        "beerCardBarbe": {
+            "cardTitle": "Barbe Noire 0,33l",
+            "cardPrice": "6,50 EUR/0,33"
+        },
+        "beerCardPetrus": {
+            "cardTitle": "Petrus Aged Pale 0,33L",
+            "cardPrice": "6,00 EUR/0,33"
+        }
+    }
+}

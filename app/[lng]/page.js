@@ -2,6 +2,7 @@
 //import LanguageChanger from "@/components/Internationalization/LanguageChanger";
 //import ExampleClient from "@/components/Internationalization/ExampleClient";
 
+import BestOff from "@/components/BestOff";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 
@@ -13,6 +14,7 @@ export default async function Home({ params: { lng }}) {
     <div className="px-[16px] py-[12px] flex flex-col h-[1000px] bg-[url('/hero.webp')] bg-cover bg-no-repeat md:px-[38px] md:bg-[url('/hero-tablet.webp')]  xl:px-[80px] xl:bg-[url('/hero-desktop.webp')] ">
       <Header lng={lng} />
       <Hero lng={lng} />
+      <BestOff lng={lng} />
     </div>
   );
 }

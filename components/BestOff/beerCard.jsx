@@ -10,7 +10,7 @@ const BeerCard = async ({ lng, image, imageAlt, cardTitle, cardPrice, cardSize }
                 <Image src={image} alt={t(imageAlt)} width={328} height={420} />
             </div>
             <div className='flex flex-col'>
-                <h4 className={`${inter.className}mx-auto mt-[24px] mb-[56px] font-medium text-[20px] leading-[1.2] text-black-600`}>
+                <h4 className={`${inter.className}mx-auto mt-[24px] mb-[36px] font-medium text-[20px] leading-[1.2] text-black-600`}>
                     {t(cardTitle)}
                 </h4>
                 <div className='mx-auto mb-[40px]'>

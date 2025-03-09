@@ -28,7 +28,7 @@ const beerCardData = [
         size: 'bestOff.beerCardFullers.cardSize',
     },
     {
-        image: '/beerCard/stone-mob.webp',
+        image: '/beerCard/stone-ipa-mob.webp',
         imageAlt: 'bestOff.beerCardStone.cardAlt',
         title: 'bestOff.beerCardStone.cardTitle',
         price: 'bestOff.beerCardStone.cardPrice',

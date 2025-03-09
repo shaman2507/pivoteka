@@ -1,5 +1,6 @@
 "use client";
 
+import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -12,9 +13,12 @@ const BestOff = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['bestOff']);
     return (
         <section>
-            <h2>
-                {t('bestOff.title')}
-            </h2>
+            <div className='flex justify-center mt-[100px] mb-[40px]'>
+                <h2 className={`${lora.className} font-medium text-[36px] leading-[1.2] text-black-600`}>
+                    {t('bestOff.title')}
+                </h2>
+            </div>
+            
             <div>
                 <Swiper
                     spaceBetween={20}
@@ -35,8 +39,12 @@ const BestOff = async ({ lng }) => {
                     {beerCardData.map((card, index) => (
                         <SwiperSlide key={index}>
                             <BeerCard
-                                title={t(card.title)}
-                                price={t(card.price)}
+                                key={index} 
+                                lng={lng} 
+                                image={card.image} 
+                                imageAlt={card.imageAlt}
+                                cardTitle={card.title} 
+                                cardPrice={card.price}
                             />
                         </SwiperSlide>
                     ))}

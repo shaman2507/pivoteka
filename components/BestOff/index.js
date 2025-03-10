@@ -2,8 +2,10 @@
 
 import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import initTranslations from '../../app/i18n';
 import beerCardData from './beerCardData';
 import BeerCard from './beerCard';
@@ -19,8 +21,13 @@ const BestOff = async ({ lng }) => {
                 </h2>
             </div>
             
-            <div>
+            <div className='mx-auto w-[328px] md:w-[688px] xl:w-[1280px] h-[616px] md:h-[544px] xl:h-[546px]'>
                 <Swiper
+                    wrapperClass="!items-stretch"
+                    className='mx-auto'
+                    autoHeight={true}
+                    modules={[Navigation]}
+                    loop={true}
                     spaceBetween={20}
                     slidesPerView={1}
                     breakpoints={{
@@ -45,6 +52,7 @@ const BestOff = async ({ lng }) => {
                                 imageAlt={card.imageAlt}
                                 cardTitle={card.title} 
                                 cardPrice={card.price}
+                                cardSize={card.size}
                             />
                         </SwiperSlide>
                     ))}

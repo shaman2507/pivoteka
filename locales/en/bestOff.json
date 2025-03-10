@@ -4,50 +4,50 @@
         "beerCardBavic": {
             "cardAlt": "Bavik Super Wit",
             "cardTitle": "Bavik Super Wit 0,25L",
-            "cardPrice": "5,50 EUR/",
-            "cardSize": "0,25"
+            "cardPrice": "5,50 EUR",
+            "cardSize": "/0,25l"
         },
         "beerCardKasteel": {
             "cardAlt": "Kasteel Cuvee De Chateau",
             "cardTitle": "Kasteel Cuvee De Chateau 0.33l",
-            "cardPrice": "9,00 EUR/",
-            "cardSize": "0,33"
+            "cardPrice": "9,00 EUR",
+            "cardSize": "/0,33l"
         },
         "beerCardDuchesse": {
             "cardAlt": "Duchesse Cherry",
             "cardTitle": "Duchesse Cherry 0,33L",
-            "cardPrice": "6,50 EUR/",
-            "cardSize": "0,33"
+            "cardPrice": "6,50 EUR",
+            "cardSize": "/0,33l"
         },
         "beerCardFullers": {
             "cardAlt": "Fullers London Pride",
             "cardTitle": "Fullers London pride 0.5 l",
-            "cardPrice": "6,00 EUR/",
-            "cardSize": "0,5"
+            "cardPrice": "6,00 EUR",
+            "cardSize": "/0,5l"
         },
         "beerCardStone": {
             "cardAlt": "Stone Ipa",
             "cardTitle": "Stone Ipa 0.355 l",
-            "cardPrice": "6,50 EUR/",
-            "cardSize": "0,35"
+            "cardPrice": "6,50 EUR",
+            "cardSize": "/0,35l"
         },
         "beerCardAyinger": {
             "cardAlt": "Ayinger Jahrhundert Bier",
             "cardTitle": "Ayinger Jahrhundert bier 0.5l",
-            "cardPrice": "5,00 EUR/",
-            "cardSize": "0,5"
+            "cardPrice": "5,00 EUR",
+            "cardSize": "/0,5l"
         },
         "beerCardBarbe": {
             "cardAlt": "Barbe Noire",
             "cardTitle": "Barbe Noire 0,33l",
-            "cardPrice": "6,50 EUR/",
-            "cardSize": "0,33"
+            "cardPrice": "6,50 EUR",
+            "cardSize": "/0,33l"
         },
         "beerCardPetrus": {
             "cardAlt": "Petrus Aged Pale",
             "cardTitle": "Petrus Aged Pale 0,33L",
-            "cardPrice": "6,00 EUR/",
-            "cardSize": "0,33"
+            "cardPrice": "6,00 EUR",
+            "cardSize": "/0,33l"
         }
     }
 }

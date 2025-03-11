@@ -23,6 +23,9 @@ export default {
         white: {
           500: '#ebebeb',
         },
+        yellow: {
+          500: '#fca500',
+        },
       },
     },
   },

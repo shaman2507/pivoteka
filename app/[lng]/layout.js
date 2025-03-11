@@ -23,6 +23,7 @@ export function generateStaticParams() {
 const i18nNamespaces = [
   'header',
   'hero',
+  'bestOff'
 ];
 
 export default async function RootLayout({ children, params: { lng } }) {

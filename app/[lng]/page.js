@@ -18,6 +18,7 @@ export default async function Home({ params: { lng }}) {
       </div>
       <div className="px-[16px] md:px-[38px] xl:px-[80px]">
         <BestOff lng={lng} />
+        <Taste />
       </div>
     </>
     

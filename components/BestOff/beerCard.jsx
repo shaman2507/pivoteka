@@ -6,8 +6,8 @@ const BeerCard = async ({ lng, image, imageAlt, cardTitle, cardPrice, cardSize }
     const { t } = await initTranslations(lng, ['bestOff']);
     return (
         <div className='flex flex-col justify-center w-[328px]'>
-            <div className='w-[328px] xl:w-[300px] h-[420px] xl:h-[400px] mx-auto'>
-                <Image src={image} alt={t(imageAlt)} width={300} height={400} />
+            <div className='w-[328px] xl:w-[300px] h-[420px] xl:h-[400px] flex justify-center'>
+                <Image src={image} alt={t(imageAlt)} width={300} height={400}  />
             </div>
             <div className='flex flex-col'>
                 <div className='flex justify-center'>

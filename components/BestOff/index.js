@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';

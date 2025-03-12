@@ -5,6 +5,7 @@
 import BestOff from "@/components/BestOff";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Taste from "@/components/Taste";
 
 //file's name, you can add other files in other components
 const i18nNamespaces = ['translation'];
@@ -18,7 +19,7 @@ export default async function Home({ params: { lng }}) {
       </div>
       <div className="px-[16px] md:px-[38px] xl:px-[80px]">
         <BestOff lng={lng} />
-        <Taste />
+        <Taste lng={lng} />
       </div>
     </>
     

@@ -1,0 +1,45 @@
+{
+    "taste": {
+        "title": "UKUSITE SVET",
+        "tasteCardSerbia": {
+            "tasteTitle": "SRBIJA",
+            "tasteText": "Pivo gornje fermentacije sa bogatim, voćnim, začinskim ili sladkim ukusima.",
+            "tasteTextSub": "Fermentiše na višim temperaturama, stvarajući stilove poput Pale Ale, IPA i Stout."
+        },
+        "tasteCardCroatia": {
+            "tasteTitle": "HRVATSKA",
+            "tasteText": "Pivo donje fermentacije, poznato po osvežavajućem, glatkom i prijatnom ukusu.",
+            "tasteTextSub": "Polako fermentisano na hladnim temperaturama, proizvodi stilove poput Pilsner, Helles i Dunkel."
+        },
+        "tasteCardIreland": {
+            "tasteTitle": "IRSKA",
+            "tasteText": "Pravljeno sa velikim udelom pšenice, što mu daje zamućen izgled i lagan ukus.",
+            "tasteTextSub": "Često ima citrusne i blago slatke note, sa stilovima poput Hefeweizen i Witbier."
+        },
+        "tasteCardEngland": {
+            "tasteTitle": "ENGLESKA",
+            "tasteText": "Tamna, punog tela piva sa ukusima pečenog slada, uključujući note kafe i čokolade.",
+            "tasteTextSub": "Potiče iz Londona 18. veka."
+        },
+        "tasteCardBelgium": {
+            "tasteTitle": "BELGIJA",
+            "tasteText": "Suvo, blago začinjeno i osvežavajuće, sa notama tamnog voća, karamele i začina.",
+            "tasteTextSub": "Jedinstvena spontano fermentisana piva sa kiselim i specifičnim ukusima."
+        },
+        "tasteCardGermany": {
+            "tasteTitle": "NEMAČKA",
+            "tasteText": "Poznata po visokokvalitetnim pivima, dom raznih tradicionalnih i modernih stilova.",
+            "tasteTextSub": "Sladna ale piva i lagana piva sa čistim završetkom."
+        },
+        "tasteCardFrance": {
+            "tasteTitle": "FRANCUSKA",
+            "tasteText": "Francuski cider varira od suvog do slatkog. Delikatna ravnoteža voćnosti i kiselosti.",
+            "tasteTextSub": "Pod uticajem tradicionalnog seoskog pivarstva."
+        },
+        "tasteCardSpain": {
+            "tasteTitle": "ŠPANIJA",
+            "tasteText": "Osvežavajuće i prijatno, idealno za tople klime.",
+            "tasteTextSub": "Prirodno fermentisano, ima kiselkast i blago specifičan karakter."
+        }
+    }
+}

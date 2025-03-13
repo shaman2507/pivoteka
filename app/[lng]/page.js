@@ -19,8 +19,11 @@ export default async function Home({ params: { lng }}) {
       </div>
       <div className="px-[16px] md:px-[38px] xl:px-[80px]">
         <BestOff lng={lng} />
+      </div>
+      <div className="h-[660px] bg-[url(/taste-the-world-bg-mob.webp)] md:bg-[url(/taste-the-world-bg-tablet.webp)] xl:bg-[url(/taste-the-world-bg-desktop.webp)] bg-cover bg-no-repeat">
         <Taste lng={lng} />
       </div>
+      
     </>
     
   );

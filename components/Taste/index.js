@@ -14,16 +14,16 @@ import tasteListData from './tasteListData';
 const Taste = async ({ lng }) => { 
     const { t } = await initTranslations(lng, ['taste']);
     return (
-        <section className='mt-[200px]'>
-            <div className='flex flex-col justify-center'>
-                <h2 className={`${lora.className} mx-auto mb-[40px] w-[328px] font-medium text-[36px] md:text-[40px] xl:text-[64px] text-center leading-[1.2] md:leading-[1.0] text-black-600`}>
+        <section className='mt-[100px] h-[660px] bg-black-500'>
+            <div className='flex  flex-col justify-center '>
+                <h2 className={`${lora.className} mx-auto mt-[100px] mb-[40px] w-[328px] font-medium text-[36px] md:text-[40px] xl:text-[64px] text-center leading-[1.2] md:leading-[1.0] text-orange-600`}>
                     {t('taste.title')}
                 </h2>
                 <div className='hidden md:flex'>
                     <SwiperBtn />
                 </div>
 
-                <div className='mx-auto w-[328px] md:w-full h-[616px] md:h-full'>
+                <div className='mx-auto w-[328px] md:w-full h-[244px] md:h-full bg-white-600'>
                     <Swiper
                         wrapperClass="!items-stretch"
                         className='mx-auto'
@@ -51,8 +51,8 @@ const Taste = async ({ lng }) => {
                                     key={index} 
                                     lng={lng}
                                     tasteTitle={taste.title} 
-                                    tasteText={taste.price}
-                                    tasteTextSub={taste.size}
+                                    tasteText={taste.text}
+                                    tasteTextSub={taste.textSub}
                                 />
                             </SwiperSlide>
                         ))}

@@ -15,6 +15,7 @@ export default {
     extend: {
       colors: {
         black: {
+          500: 'rgba(29,29,29,0.85)',
           600: '#1A1A1A',
         },
         orange: {
@@ -22,6 +23,7 @@ export default {
         },
         white: {
           500: '#ebebeb',
+          600: 'rgba(255, 255, 255, 0.09)',
         },
         yellow: {
           500: '#fca500',

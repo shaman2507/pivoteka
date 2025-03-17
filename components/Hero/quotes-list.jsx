@@ -43,7 +43,7 @@ const HeroQuotesList = async ({ lng }) => {
                             {t('hero.quote-4')}
                         </p>
                         <ElementQuoteMob4 className={'absolute z-50 mt-[64px] w-[180px] h-[36px] md:hidden'} />
-                        <ElementQuote4 className={'hidden md:flex absolute z-50 md:w-[280px] md:h-[56px] md:mt-[100px]'} />
+                        <ElementQuote4 className={'hidden md:flex absolute z-50 md:w-[280px] md:h-[56px] md:mt-[100px] xl:mt-[48px]'} />
                     </div>    
                 </div>
             </div>

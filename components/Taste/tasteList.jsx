@@ -4,7 +4,7 @@ import { inter } from '@/fonts';
 const TasteList = async ({ lng, tasteTitle, tasteText, tasteTextSub }) => { 
     const { t } = await initTranslations(lng, ['taste']);
     return (
-        <div className='flex flex-col justify-center w-[328px]'>
+        <div className='flex flex-col justify-center w-[328px] md:w-[335px] h-[244px] rounded-[8px] bg-white-600'>
             
             <div className='flex flex-col p-[32px]'>
                 <div className='flex '>
@@ -15,12 +15,12 @@ const TasteList = async ({ lng, tasteTitle, tasteText, tasteTextSub }) => {
                 
                 <div className='mx-auto flex flex-col items-baseline gap-[16px]'>
                     <div>
-                        <p className={`${inter.className} font-normal text-[16px] md:text-[32px] xl:text-[40px] leading-[1.3] text-white-500`}>
+                        <p className={`${inter.className} font-normal text-[16px] xl:text-[40px] leading-[1.3] text-white-500`}>
                             {t(tasteText)}
                         </p>
                     </div>
-                    <div className='mb-[32px]'>
-                        <p className={`${inter.className} font-normal text-[16px] md:text-[20px] xl:text-[24px] leading-[1.3] text-white-500`}>
+                    <div >
+                        <p className={`${inter.className} font-normal text-[16px] xl:text-[24px] leading-[1.3] text-white-500`}>
                             {t(tasteTextSub)}
                         </p>
                     </div>

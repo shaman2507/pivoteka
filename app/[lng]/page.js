@@ -2,6 +2,7 @@
 //import LanguageChanger from "@/components/Internationalization/LanguageChanger";
 //import ExampleClient from "@/components/Internationalization/ExampleClient";
 
+import AboutUs from "@/components/AboutUs";
 import BestOff from "@/components/BestOff";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -23,7 +24,7 @@ export default async function Home({ params: { lng }}) {
       <div className="h-[660px] bg-[url(/taste-the-world-bg-mob.webp)] md:bg-[url(/taste-the-world-bg-tablet.webp)] xl:bg-[url(/taste-the-world-bg-desktop.webp)] bg-cover bg-no-repeat">
         <Taste lng={lng} />
       </div>
-      
+      <AboutUs />
     </>
     
   );

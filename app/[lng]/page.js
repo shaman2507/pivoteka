@@ -5,6 +5,7 @@
 import BestOff from "@/components/BestOff";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Taste from "@/components/Taste";
 
 //file's name, you can add other files in other components
 const i18nNamespaces = ['translation'];
@@ -19,6 +20,10 @@ export default async function Home({ params: { lng }}) {
       <div className="px-[16px] md:px-[38px] xl:px-[80px]">
         <BestOff lng={lng} />
       </div>
+      <div className="h-[660px] bg-[url(/taste-the-world-bg-mob.webp)] md:bg-[url(/taste-the-world-bg-tablet.webp)] xl:bg-[url(/taste-the-world-bg-desktop.webp)] bg-cover bg-no-repeat">
+        <Taste lng={lng} />
+      </div>
+      
     </>
     
   );

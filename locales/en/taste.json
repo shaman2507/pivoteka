@@ -1,0 +1,45 @@
+{
+    "taste": {
+        "title": "TASTE THE WORLD",
+        "tasteCardSerbia": {
+            "tasteTitle": "SERBIA",
+            "tasteText": "Top-fermented beer with rich, fruity, spicy, or malty flavors.",
+            "tasteTextSub": "Ferments at warmer temperatures, creating styles like Pale Ale, IPA, and Stout."
+        },
+        "tasteCardCroatia": {
+            "tasteTitle": "CROATIA",
+            "tasteText": "Bottom-fermented beer, known for its crisp, smooth, and refreshing taste.",
+            "tasteTextSub": "Fermented slowly at cold temperatures, producing styles like Pilsner, Helles, and Dunkel."
+        },
+        "tasteCardIreland": {
+            "tasteTitle": "IRELAND",
+            "tasteText": "Brewed with a high proportion of wheat, giving it a cloudy appearance and light taste.",
+            "tasteTextSub": "Often has citrusy and slightly sweet flavors, with styles like Hefeweizen and Witbier."
+        },
+        "tasteCardEngland": {
+            "tasteTitle": "ENGLAND",
+            "tasteText": "Dark, full-bodied beers with roasted malt flavors, featuring notes of coffee, chocolate.",
+            "tasteTextSub": "Originated in 18th-century London."
+        },
+        "tasteCardBelgium": {
+            "tasteTitle": "BELGIUM",
+            "tasteText": "Dry, slightly spicy, and refreshing, with notes of dark fruit, caramel, and spice.",
+            "tasteTextSub": "Unique spontaneously fermented beers with sour and funky flavors."
+        },
+        "tasteCardGermany": {
+            "tasteTitle": "GERMANY",
+            "tasteText": "Famous for its high-quality beers, home to a variety of traditional and modern styles.",
+            "tasteTextSub": "Malty ales and crisp, light beers with a clean finish."
+        },
+        "tasteCardFrance": {
+            "tasteTitle": "FRANCE",
+            "tasteText": "French cider rages from dry to sweet. A delicate balance of fruitiness and acidity.",
+            "tasteTextSub": "Influenced by traditional farmhouse brewing"
+        },
+        "tasteCardSpain": {
+            "tasteTitle": "SPAIN",
+            "tasteText": "Crisp and refreshing, suited for warm climates.",
+            "tasteTextSub": "Naturally fermented, it has a tart, slightly funky character."
+        }
+    }
+}

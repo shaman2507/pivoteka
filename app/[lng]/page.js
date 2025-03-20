@@ -7,6 +7,7 @@ import BestOff from "@/components/BestOff";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Taste from "@/components/Taste";
+import Wdwo from "@/components/Wdwo";
 
 //file's name, you can add other files in other components
 const i18nNamespaces = ['translation'];
@@ -25,6 +26,7 @@ export default async function Home({ params: { lng }}) {
         <Taste lng={lng} />
       </div>
       <AboutUs />
+      <Wdwo />
     </>
     
   );

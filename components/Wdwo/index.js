@@ -8,9 +8,9 @@ const Wdwo = async ({ lng }) => {
             <h2 className={`${lora.className} mb-[40px] xl:mb-[64px] flex text-center font-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-black-600`}>
                 {t('wdwo.title')}
             </h2>
-            <div className='flex xl:flex-row xl:gap-[20px]'>
+            <div className='flex flex-col xl:flex-row xl:gap-[20px]'>
                 <div className='mb-[12px] md:mb-[20px]'>
-                    <div className='mb-[12px] md:mb-[20px] w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[632px] h-[158px] md:h-[332px] xl:h-[275px] xlr:h-[304px] rounded-[12px] bg-[url(/offer-wheat.webp)] bg-cover bg-no-repeat '>
+                    <div className='mb-[12px] md:mb-[20px] w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[628px] h-[158px] md:h-[332px] xl:h-[275px] xlr:h-[306px] rounded-[12px] bg-[url(/offer-wheat.webp)] bg-cover bg-no-repeat '>
                         <div className='w-full h-full flex justify-center items-center rounded-[12px] bg-black-400'>
                             <div className='w-full h-[52px] md:h-[72px] xl:h-[80px] flex justify-center items-center bg-black-400'>
                                 <p className={`${lora.className} font-medium text-[28px] md:text-[32px] xl:text-[40px] leading-[1.0] text-orange-600`}>
@@ -19,7 +19,7 @@ const Wdwo = async ({ lng }) => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex gap-[12px] xl:gap-[20px]'>
+                    <div className='flex gap-[12px] md:gap-[20px]'>
                         <div className='w-[158px] md:w-[334px] xl:w-[275px] xlr:w-[304px] h-[158px] md:h-[334px] xl:h-[275px] xlr:h-[304px] flex justify-center items-center rounded-[12px] bg-[url(/offer-sour.webp)] bg-cover bg-no-repeat'>
                             <div className='w-full h-full flex justify-center items-center rounded-[12px] bg-black-400'>
                                 <div className='w-full h-[52px] md:h-[72px] xl:h-[80px] flex justify-center items-center bg-black-400'>
@@ -41,7 +41,7 @@ const Wdwo = async ({ lng }) => {
                     </div>
                 </div>
                 <div className='mb-[12px] md:mb-[20px]'>
-                    <div className='w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[632px] h-[158px] md:h-[332px] xl:h-[575px] xlr:h-[632px] flex justify-center items-center rounded-[12px] bg-[url(/offer-lambic.webp)] bg-cover bg-no-repeat'>
+                    <div className='w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[634px] h-[158px] md:h-[332px] xl:h-[575px] xlr:h-[630px] flex justify-center items-center rounded-[12px] bg-[url(/offer-lambic.webp)] bg-cover bg-no-repeat'>
                         <div className='w-full h-full flex justify-center items-center rounded-[12px] bg-black-400'>
                             <div className='w-full h-[52px] md:h-[72px] xl:h-[80px] flex justify-center items-center bg-black-400'>
                                 <p className={`${lora.className} font-medium text-[28px] md:text-[32px] xl:text-[40px] leading-[1.0] text-orange-600`}>
@@ -55,8 +55,8 @@ const Wdwo = async ({ lng }) => {
             
             <div className='mb-[100px] md:mb-[120px] xl:flex xl:gap-[20px]'>
                 <div className='flex  mb-[12px] md:mb-[20px] gap-[12px] xl:gap-[20px]'>
-                    <div className='flex gap-[12px] xlr:gap-[20px]'>
-                        <div className='w-[158px] md:w-[334px] xl:w-[275px] xlr:w-[305px] h-[158px] md:h-[334px] xl:h-[275px] xlr:h-[305px] flex justify-center items-center rounded-[12px] bg-[url(/offer-ipa.webp)] bg-cover bg-no-repeat'>
+                    <div className='flex gap-[12px] md:gap-[20px]'>
+                        <div className='w-[158px] md:w-[334px] xl:w-[275px] xlr:w-[304px] h-[158px] md:h-[334px] xl:h-[275px] xlr:h-[304px] flex justify-center items-center rounded-[12px] bg-[url(/offer-ipa.webp)] bg-cover bg-no-repeat'>
                             <div className='w-full h-full flex justify-center items-center rounded-[12px] bg-black-400'>
                                 <div className='w-full h-[52px] md:h-[72px] xl:h-[80px] flex justify-center items-center bg-black-400'>
                                     <p className={`${lora.className} font-medium text-[28px] md:text-[32px] xl:text-[40px] leading-[1.0] text-orange-600`}>
@@ -76,7 +76,7 @@ const Wdwo = async ({ lng }) => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[630px] h-[158px] md:h-[332px] xl:h-[275px] xlr:h-[305px] flex justify-center items-center rounded-[12px] bg-[url(/offer-stout.webp)] bg-cover bg-no-repeat'>
+                <div className='w-[328px] md:w-[688px] xl:w-[570px] xlr:w-[632px] h-[158px] md:h-[332px] xl:h-[275px] xlr:h-[305px] flex justify-center items-center rounded-[12px] bg-[url(/offer-stout.webp)] bg-cover bg-no-repeat'>
                     <div className='w-full h-full flex justify-center items-center rounded-[12px] bg-black-400'>
                         <div className='w-full h-[52px] md:h-[72px] xl:h-[80px] flex justify-center items-center bg-black-400'>
                             <p className={`${lora.className} font-medium text-[28px] md:text-[32px] xl:text-[40px] leading-[1.0] text-orange-600`}>

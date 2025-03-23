@@ -4,6 +4,7 @@
 
 import AboutUs from "@/components/AboutUs";
 import BestOff from "@/components/BestOff";
+import Brands from "@/components/Brands";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Taste from "@/components/Taste";
@@ -27,6 +28,7 @@ export default async function Home({ params: { lng }}) {
       </div>
       <AboutUs />
       <Wdwo />
+      <Brands />
     </>
     
   );

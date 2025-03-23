@@ -1,0 +1,53 @@
+{
+    "brands": {
+        "title": "FEATURED BRANDS",
+        "brandCardBoon": {
+            "cardAlt": "Boon beer"
+        },
+        "brandCardDuchesse": {
+            "cardAlt": "Duchesse beer"
+        },
+        "brandCardPeroni": {
+            "cardAlt": "Peroni beer"
+        },
+        "brandCardKozel": {
+            "cardAlt": "Kozel beer"
+        },
+        "brandCardPilsner": {
+            "cardAlt": "Pilsner Urquell beer"
+        },
+        "brandCardBrewdog": {
+            "cardAlt": "Brewdog beer"
+        },
+        "brandCardWestons": {
+            "cardAlt": "Henry Westons beer"
+        },
+        "brandCardLindemans": {
+            "cardAlt": "Lindemans beer"
+        },
+        "brandCardBocq": {
+            "cardAlt": "Bocq beer"
+        },
+        "brandCardTimmermans": {
+            "cardAlt": "Timmermans beer"
+        },
+        "brandCardDubuisson": {
+            "cardAlt": "Dubuisson beer"
+        },
+        "brandCardCorsendonk": {
+            "cardAlt": "Corsendonk beer"
+        },
+        "brandCardHoegaarden": {
+            "cardAlt": "Hoegaarden beer"
+        },
+        "brandCardRodenbach": {
+            "cardAlt": "Rodenbach beer"
+        },
+        "brandCardKees": {
+            "cardAlt": "Kees beer"
+        },
+        "brandCardGuldendraak": {
+            "cardAlt": "Gulden Draak beer"
+        }
+    }
+}

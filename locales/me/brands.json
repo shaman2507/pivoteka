@@ -1,0 +1,53 @@
+{
+    "brands": {
+        "title": "NAŠI PARTNERI",
+        "brandCardBoon": {
+            "cardAlt": "Boon pivo"
+        },
+        "brandCardDuchesse": {
+            "cardAlt": "Duchesse pivo"
+        },
+        "brandCardPeroni": {
+            "cardAlt": "Peroni pivo"
+        },
+        "brandCardKozel": {
+            "cardAlt": "Kozel pivo"
+        },
+        "brandCardPilsner": {
+            "cardAlt": "Pilsner Urquell pivo"
+        },
+        "brandCardBrewdog": {
+            "cardAlt": "Brewdog pivo"
+        },
+        "brandCardWestons": {
+            "cardAlt": "Henry Westons pivo"
+        },
+        "brandCardLindemans": {
+            "cardAlt": "Lindemans pivo"
+        },
+        "brandCardBocq": {
+            "cardAlt": "Bocq pivo"
+        },
+        "brandCardTimmermans": {
+            "cardAlt": "Timmermans pivo"
+        },
+        "brandCardDubuisson": {
+            "cardAlt": "Dubuisson pivo"
+        },
+        "brandCardCorsendonk": {
+            "cardAlt": "Corsendonk pivo"
+        },
+        "brandCardHoegaarden": {
+            "cardAlt": "Hoegaarden pivo"
+        },
+        "brandCardRodenbach": {
+            "cardAlt": "Rodenbach pivo"
+        },
+        "brandCardKees": {
+            "cardAlt": "Kees pivo"
+        },
+        "brandCardGuldendraak": {
+            "cardAlt": "Gulden Draak pivo"
+        }
+    }
+}

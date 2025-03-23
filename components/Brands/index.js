@@ -1,3 +1,5 @@
+'use client';
+
 import initTranslations from '../../app/i18n';
 import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,29 +8,37 @@ import { SwiperBtn } from '../Buttons/SwiperBtn';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import BrandCard from './brandCard';
+import brandsCardData from './brandsCardData';
 
 const Brands = async ({ lng }) => { 
     const { t } = await initTranslations(lng, ['brands']);
     return (
-        <section className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] pt-[100px]'>
+        <section className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto pt-[100px]'>
             <h2 className={`${lora.className} font-medium text-[36px] leading-[1.2] mb-[40px] text-black-600`}>
                 {t('brands.title')}
             </h2>
+            <div className='hidden md:flex'>
+                <SwiperBtn />
+            </div>
             <div>
                 <Swiper
                     wrapperClass="!items-stretch"
-                    className='h-[244px]'
+                    className='h-[120px] items-center'
                     autoHeight={true}
                     modules={[Navigation]}
                     loop={true}
-                    spaceBetween={20}
-                    slidesPerView={1}
+                    spaceBetween={64}
+                    slidesPerView={2}
                     breakpoints={{
                         768: {
-                        slidesPerView: 2,
+                            slidesPerView: 3,
                         },
                         1280: {
-                        slidesPerView: 4,
+                            slidesPerView: 4,
+                        },
+                        1440: {
+                            slidesPerView: 6,
                         },
                     }}
                     navigation={{
@@ -36,11 +46,11 @@ const Brands = async ({ lng }) => {
                         prevEl: '.s-button-prev',
                     }}
                 >
-                    {tasteListData.map((taste, index) => (
+                    {brandsCardData.map((brand, index) => (
                         <SwiperSlide key={index}>
-                            <TasteList
+                            <BrandCard
                                 key={index} 
-                                
+                                image={brand.image} 
                             />
                         </SwiperSlide>
                     ))}
@@ -52,3 +62,5 @@ const Brands = async ({ lng }) => {
         </section>
     );
 };
+
+export default Brands;

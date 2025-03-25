@@ -27,7 +27,8 @@ const i18nNamespaces = [
   'taste',
   'aboutUs',
   'wdwo',
-  'brands'
+  'brands',
+  'deals'
 ];
 
 export default async function RootLayout({ children, params: { lng } }) {

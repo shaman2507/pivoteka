@@ -8,6 +8,7 @@ import Brands from "@/components/Brands";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Taste from "@/components/Taste";
+import TopDeal from "@/components/TopDeals";
 import Wdwo from "@/components/Wdwo";
 
 //file's name, you can add other files in other components
@@ -26,9 +27,10 @@ export default async function Home({ params: { lng }}) {
       <div className="h-[660px] bg-[url(/taste-the-world-bg-mob.webp)] md:bg-[url(/taste-the-world-bg-tablet.webp)] xl:bg-[url(/taste-the-world-bg-desktop.webp)] bg-cover bg-no-repeat">
         <Taste lng={lng} />
       </div>
-      <AboutUs />
-      <Wdwo />
-      <Brands />
+      <AboutUs lng={lng} />
+      <Wdwo lng={lng} />
+      <Brands lng={lng} />
+      <TopDeal lng={lng} />
     </>
     
   );

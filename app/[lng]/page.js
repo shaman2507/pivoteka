@@ -5,6 +5,7 @@
 import AboutUs from "@/components/AboutUs";
 import BestOff from "@/components/BestOff";
 import Brands from "@/components/Brands";
+import Contacts from "@/components/Contacts";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Taste from "@/components/Taste";
@@ -31,6 +32,7 @@ export default async function Home({ params: { lng }}) {
       <Wdwo lng={lng} />
       <Brands lng={lng} />
       <TopDeal lng={lng} />
+      <Contacts lng={lng} />
     </>
     
   );

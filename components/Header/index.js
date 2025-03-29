@@ -32,13 +32,3 @@ const Header = ({ lng }) => {
 };
 
 export default Header;
-
-
-{/* <header className="mb-[12px] z-50 top-0 left-0 w-full ">
-    <div className="mx-auto  flex justify-between md:flex-row-reverse">
-        <Navigation lng={lng} />
-        <LocationLink />
-        <Logo className={'w-[80px] h-[80px]'} />
-        <MenuBtn lng={lng} />
-    </div>
-</header> */}

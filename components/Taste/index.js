@@ -14,7 +14,7 @@ import tasteListData from './tasteListData';
 const Taste = async ({ lng }) => { 
     const { t } = await initTranslations(lng, ['taste']);
     return (
-        <section className='h-[660px] bg-black-500 md:px-[40px] xl:px-[60px] xlr:px-[80px]'>
+        <section id="taste" className='h-[660px] bg-black-500 md:px-[40px] xl:px-[60px] xlr:px-[80px]'>
             <div className='flex flex-col md:flex-row mb-[40px] md:mb-[44px] xl:mb-[64px] pt-[100px] md:pt-[120px] md:items-center justify-center md:justify-between'>
                 <h2 className={`${lora.className} w-[328px] md:w-[380px] xl:w-[604px] font-medium text-[36px] md:text-[40px] xl:text-[64px] text-center md:text-left leading-[1.2] md:leading-[1.0] text-orange-600`}>
                     {t('taste.title')}

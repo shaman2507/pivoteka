@@ -29,12 +29,15 @@ export default async function Home({ params: { lng }}) {
       <div className="h-[660px] bg-[url(/taste-the-world-bg-mob.webp)] md:bg-[url(/taste-the-world-bg-tablet.webp)] xl:bg-[url(/taste-the-world-bg-desktop.webp)] bg-cover bg-no-repeat">
         <Taste lng={lng} />
       </div>
-      <AboutUs lng={lng} />
+      <AboutUs  lng={lng} />
       <Wdwo lng={lng} />
       <Brands lng={lng} />
       <TopDeal lng={lng} />
       <Contacts lng={lng} />
-      <Footer lng={lng} />
+      <div className=" h-[749px] bg-[url(/footer-mob.webp)] bg-cover bg-no-repeat">
+        <Footer lng={lng} />
+      </div>
+      
     </>
     
   );

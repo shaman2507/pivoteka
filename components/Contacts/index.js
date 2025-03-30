@@ -5,7 +5,7 @@ import Map from './map';
 const Contacts = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['contacts']);
     return (
-        <section className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto py-[100px] mb:py-[120px]'>
+        <section id="contacts" className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto py-[100px] mb:py-[120px]'>
             <h2 className={`${lora.className} mb-[40px] flex text-center justify-center xl:justify-start font-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-black-600`}>
                 {t('contacts.title')}
             </h2>

@@ -5,7 +5,7 @@ import initTranslations from '../../app/i18n';
 const FooterNavigation = async ({ lng }) => { 
     const { t } = await initTranslations(lng, ['footer']);
     return (
-        <div className='flex flex-col mt-[64px] gap-[24px]'>
+        <div className='flex flex-col gap-[24px]'>
             <Link href="#about-us" className={`${inter.className} font-medium text-[16px] leading-[1.2] text-white-500`}>
                 {t('footer.about-us')}
             </Link>

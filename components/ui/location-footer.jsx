@@ -8,7 +8,7 @@ const LocationFooter = ({ className, onClick }) => {
         <div className='mt-[52px] flex flex-col gap-[12px]'>
             <Link className={`${className} flex`} href="https://maps.app.goo.gl/3vWqMVqiBofgAFiu9" onClick={onClick}>
                 <IoLocationSharp color="orange" size="24" />
-                <p className={`${inter.className} pl-[4px] font-medium text-[16px] leading-[1.2] text-white-500`}>Budva</p>
+                <p className={`${inter.className} pl-[4px]  font-medium text-[16px] leading-[1.2] text-white-500`}>Budva</p>
             </Link>
             <Link className={`${className} flex`} href="tel:+382222222222" onClick={onClick}>
                 <FaPhone color="orange" size="24" />

@@ -34,7 +34,7 @@ export default async function Home({ params: { lng }}) {
       <Brands lng={lng} />
       <TopDeal lng={lng} />
       <Contacts lng={lng} />
-      <div className=" h-[749px] bg-[url(/footer-mob.webp)] bg-cover bg-no-repeat">
+      <div className=" h-[749px] md:h-[310px] xl:h-[334px] bg-[url(/footer-mob.webp)] md:bg-[url(/footer-tabl-desk.webp)] bg-cover bg-no-repeat">
         <Footer lng={lng} />
       </div>
       

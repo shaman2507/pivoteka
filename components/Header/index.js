@@ -23,7 +23,7 @@ const Header = ({ lng }) => {
                     <div className="md:flex justify-between gap-[32px]">
                         <LocationLink className="md:flex" />
                         <MenuBtn lng={lng} />
-                        <ChangeLang lng={lng} />
+                        <ChangeLang className={`hidden xl:flex`} lng={lng} />
                     </div>
                 </div>
             </div>

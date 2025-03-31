@@ -14,7 +14,7 @@ const HeroQuotesList = async ({ lng }) => {
         <conteiner className='mx-auto w-full md:w-[512px] xl:w-[840px] mt-[24px] md:mt-[116px]  flex flex-col xl:justify-center'>
             <div className='flex justify-end md:justify-start xl:justify-between md:gap-[88px]'>
                 <div className='hidden md:flex md:w-[246px] xl:[206px]'>
-                    <ElementQuote1 className={'absolute z-50 md:mt-[-32px] md:w-[104px] md:h-[120px]'} />
+                    <ElementQuote1 className={'absolute z-20 md:mt-[-32px] md:w-[104px] md:h-[120px]'} />
                     <p className={`${inter.className} md:ml-[40px] font-medium italic text-base text-white-500`}>
                         {t('hero.quote-1')}
                     </p>
@@ -23,8 +23,8 @@ const HeroQuotesList = async ({ lng }) => {
                     <p className={`${inter.className} font-medium italic text-base text-white-500`}>
                         {t('hero.quote-2')}
                     </p>
-                    <ElementQuoteMob2 className={'absolute z-50 mt-[28px] mr-[4px] w-[60px] ml-[100px] h-[72px] md:hidden'} />
-                    <ElementQuote2 className={'hidden md:flex absolute z-50 md:ml-[96px] md:w-[104px] md:h-[120px]'} />
+                    <ElementQuoteMob2 className={'absolute z-20 mt-[28px] mr-[4px] w-[60px] ml-[100px] h-[72px] md:hidden'} />
+                    <ElementQuote2 className={'hidden md:flex absolute z-20 md:ml-[96px] md:w-[104px] md:h-[120px]'} />
                 </div>    
             </div>
             <div className='flex flex-col xl:flex-row-reverse xl:justify-between xl:w-[700px] xl:mx-auto '>
@@ -34,16 +34,16 @@ const HeroQuotesList = async ({ lng }) => {
                             {t('hero.quote-3')}
                         </p>
                     </div> 
-                    <ElementQuoteMob3 className={'z-50 w-[180px] h-[36px] mt-[12px] md:hidden'} />
-                    <ElementQuote3 className={'hidden md:flex absolute z-50 md:mt-[44px] md:w-[270px] md:h-[56px]'} />
+                    <ElementQuoteMob3 className={'z-20 w-[180px] h-[36px] mt-[12px] md:hidden'} />
+                    <ElementQuote3 className={'hidden md:flex absolute z-20 md:mt-[44px] md:w-[270px] md:h-[56px]'} />
                 </div>
                 <div className='flex justify-end md:justify-start md:mt-[16px] xl:mt-[0px]'>
                     <div className='flex w-[207px] md:w-[208px] xl:[204px] items-center xl:items-baseline'>
                         <p className={`${inter.className} font-medium italic text-base text-white-500`}>
                             {t('hero.quote-4')}
                         </p>
-                        <ElementQuoteMob4 className={'absolute z-50 mt-[64px] w-[180px] h-[36px] md:hidden'} />
-                        <ElementQuote4 className={'hidden md:flex absolute z-50 md:w-[280px] md:h-[56px] md:mt-[100px] xl:mt-[48px]'} />
+                        <ElementQuoteMob4 className={'absolute z-20 mt-[64px] w-[180px] h-[36px] md:hidden'} />
+                        <ElementQuote4 className={'hidden md:flex absolute z-20 md:w-[280px] md:h-[56px] md:mt-[100px] xl:mt-[48px]'} />
                     </div>    
                 </div>
             </div>

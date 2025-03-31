@@ -5,7 +5,7 @@ import HeroQuotes from './quotes';
 const Hero = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['hero']);
     return (
-        <section className='mt-[80px] md:mt-[116px]'>
+        <section className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto mt-[80px] md:mt-[116px]'>
             <div className='flex flex-col '>
                 <h1 className={`${lora.className} 
                     w-[328px] md:w-[512px] xl:w-[732px]

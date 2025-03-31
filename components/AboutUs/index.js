@@ -9,7 +9,7 @@ import { inter } from '@/fonts';
 const AboutUs = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['aboutUs']);
     return (
-        <section id="about-us" className='flex flex-col xl:flex-row  bg-black-600'>
+        <section id="about-us" className='flex flex-col xl:flex-row bg-black-600'>
             <div className='pt-[92px] md:pt-[120px] xlr:pt-[160px] px-[16px] md:px-[128px] xl:px-[80px] pb-[80px] xl:pb-[120px] xl:w-[50%]'>
                 <h2 className={`${lora.className} mb-[40px] xl:mb-[52px] text-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-yellow-500`}>
                     {t('aboutUs.title')}

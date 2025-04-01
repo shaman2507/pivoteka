@@ -10,23 +10,23 @@ const AboutUs = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['aboutUs']);
     return (
         <section id="about-us" className='flex flex-col xl:flex-row bg-black-600'>
-            <div className='xl:flex xl:justify-end pt-[92px] md:pt-[120px] xlr:pt-[160px] px-[16px] md:px-[128px] xl:px-[80px] pb-[80px] xl:pb-[120px] xl:w-[50%]'>
-                <div className='xl:w-[412px] xl:h-[328px] xl:mr-[236px]'>
-                    <h2 className={`${lora.className} mb-[40px] xl:mb-[52px] text-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-yellow-500`}>
+            <div className='z-1 xl:w-[50%] flex xl:items-center justify-center'>
+                <div className='w-[328px] md:w-[512px] xl:w-[413px] xl:h-[328px]'>
+                    <h2 className={`${lora.className} mt-[100px] md:mt-[120px] xl:mt-[0px] mb-[40px] xl:mb-[52px] text-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-yellow-500`}>
                         {t('aboutUs.title')}
                     </h2>
                     <p className={`${inter.className} mb-[20px] xl:mb-[24px] text-normal text-[16px] leading-[1.3] text-white-500`}>
                         {t('aboutUs.text-1')}
                     </p>
-                    <p className={`${inter.className}  text-normal text-[16px] leading-[1.3] text-white-500`}>
+                    <p className={`${inter.className} mb-[80px] text-normal text-[16px] leading-[1.3] text-white-500`}>
                         {t('aboutUs.text-2')}
                     </p>
                 </div>  
             </div>
-            <div className='xl:w-[50%]'>
+            <div className='xl:w-[50%] flex justify-end'>
                 <Image src={HeroImg} alt="glass of beer" height={569} className='md:hidden' />
                 <Image src={HeroImgTablet} alt='glass of beer' height={569} className='hidden md:flex xl:hidden' />
-                <Image src={HeroImgDesktop} alt='glass of beer' width={710} height={569} className='hidden xl:flex xlr:hidden' />
+                <Image src={HeroImgDesktop} alt='glass of beer' width={720} height={569} className='hidden xl:flex xlr:hidden' />
                 <Image src={HeroImgDesktop} alt='glass of beer' width={960} height={569} className='hidden xlr:flex' />
             </div>
         </section>

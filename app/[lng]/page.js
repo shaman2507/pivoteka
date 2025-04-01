@@ -19,9 +19,11 @@ const i18nNamespaces = ['translation'];
 export default async function Home({ params: { lng }}) {
   return (
     <>
-      <div className="py-[12px] flex flex-col h-[1000px] bg-[url('/hero.webp')] bg-cover bg-no-repeat  md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] ">
-        <Header lng={lng} />
-        <Hero lng={lng} />
+      <div className="flex flex-col h-[1000px] bg-[url('/hero.webp')] md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] bg-cover bg-no-repeat">
+        <div className="py-[12px] w-full h-full bg-black-400">
+          <Header lng={lng} />
+          <Hero lng={lng} />
+        </div>
       </div>
       <div className="w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto">
         <BestOff lng={lng} />

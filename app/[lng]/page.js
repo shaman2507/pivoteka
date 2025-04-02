@@ -1,7 +1,3 @@
-/*This element is example, It can switch language*/
-//import LanguageChanger from "@/components/Internationalization/LanguageChanger";
-//import ExampleClient from "@/components/Internationalization/ExampleClient";
-
 import AboutUs from "@/components/AboutUs";
 import BestOff from "@/components/BestOff";
 import Brands from "@/components/Brands";
@@ -13,18 +9,18 @@ import Taste from "@/components/Taste";
 import TopDeal from "@/components/TopDeals";
 import Wdwo from "@/components/Wdwo";
 
-//file's name, you can add other files in other components
 const i18nNamespaces = ['translation'];
 
 export default async function Home({ params: { lng }}) {
   return (
     <>
-      <div className="flex flex-col h-[1000px] bg-[url('/hero.webp')] md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] bg-cover bg-no-repeat">
-        <div className="py-[12px] w-full h-full bg-black-400">
+      <div className="relative w-full min-h-screen bg-[url('/hero.webp')] md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-black-400">
           <Header lng={lng} />
           <Hero lng={lng} />
         </div>
       </div>
+
       <div className="w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto">
         <BestOff lng={lng} />
       </div>

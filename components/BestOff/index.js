@@ -14,7 +14,7 @@ import { SwiperBtn } from '../Buttons/SwiperBtn';
 const BestOff = async ({ lng }) => {
     const { t } = await initTranslations(lng, ['bestOff']);
     return (
-        <section id="best-offers" className='h-[900px] md:h-[872px] xl:h-[884px]'>
+        <section id="best-offers" className='mb-[100px]'>
             <div className='flex justify-center md:justify-between md:items-center mt-[100px] md:mt-[124px] mb-[40px] md:mb-[44px]'>
                 <h2 className={`${lora.className} font-medium text-[36px] md:text-[40px] xl:text-[64px] leading-[1.2] md:leading-[1.0] text-black-600`}>
                     {t('bestOff.title')}
@@ -24,7 +24,7 @@ const BestOff = async ({ lng }) => {
                 </div>
             </div>
             
-            <div className='mx-auto md:w-[688px] xl:w-[1160px] xlr:w-[1280px] h-[616px] md:h-[544px] xl:h-[546px]'>
+            <div className='mx-auto w-[328px] md:w-full h-[616px] md:h-full'>
                 <Swiper
                     wrapperClass="!items-stretch"
                     className='mx-auto'

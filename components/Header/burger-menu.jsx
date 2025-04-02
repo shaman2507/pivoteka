@@ -16,10 +16,10 @@ const BurgerMenu = ({ isVisible, closeBurgerMenu }) => {
     useClickOutside(isVisible, burgerMenuRef, closeBurgerMenu);
 
     return (
-        <div className={`z-50 w-full h-screen fixed top-0 right-0 transition-all duration-300 bg-[url(/burger-bg-mob.webp)] md:bg-[url(/burger-bg-tablet.webp)] bg-cover bg-no-repeat  ${
+        <div className={`z-50 w-full h-full fixed top-0 right-0 transition-all duration-300 bg-[url(/burger-bg-mob.webp)] md:bg-[url(/burger-bg-tablet.webp)] bg-cover bg-no-repeat  ${
             isVisible ? 'translate-x-0' : 'translate-x-[100%]'
         }`}>
-            <div ref={burgerMenuRef} className={`w-[100%] h-screen py-7 md:py-[40px] px-4 md:px-[80px] absolute top-0 right-0 bg-white w-[360px] md:w-[768px] bg-[linear-gradient(360deg,rgba(0,0,0,0.5)_0%,rgba(0,0,0,0.5)_38.4%)] ${
+            <div ref={burgerMenuRef} className={`w-[100%] h-[100%] py-7 md:py-[40px] px-4 md:px-[80px] absolute top-0 right-0 bg-white  bg-[linear-gradient(360deg,rgba(0,0,0,0.5)_0%,rgba(0,0,0,0.5)_38.4%)] ${
                 isVisible ? 'translate-x-0' : 'right-[-100%]'
             } transition-all duration-300`}>
                 <div className='w-[44px] md:w-[48px] h-[44px] md:h-[48px] mb-[32px] ml-auto rounded-full bg-yellow-500'>
@@ -31,15 +31,18 @@ const BurgerMenu = ({ isVisible, closeBurgerMenu }) => {
                     </button>
                 </div>
                 <div className='w-[164px] mx-auto gap-[64px]'>
-                    <BurgerMenuNav />
+                    <BurgerMenuNav closeBurgerMenu={closeBurgerMenu} />
                     <LocationFooter />
                 </div>
-                <div className='w-[164px] mx-auto mt-[64px] mb-[171px] md:mb-[488px]'>
-                    <ChangeLang />
+                <div className='h-[50%] flex flex-col justify-between'>
+                    <div className='flex w-[164px] mx-auto mt-[64px]'>
+                        <ChangeLang />
+                    </div>
+                    <div className='flex justify-center'>
+                        <Logo className={`w-[120px] h-[120px]`} />
+                    </div>
                 </div>
-                <div className='flex justify-center'>
-                    <Logo className={`w-[120px] h-[120px]`} />
-                </div>
+                
                 
             </div>
         </div>

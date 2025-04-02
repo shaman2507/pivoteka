@@ -6,7 +6,7 @@ import Navigation from "./navigation";
 
 const Header = ({ lng }) => {
     return (
-        <header className="mb-[12px] z-50 top-0 left-0 w-full ">
+        <header className="mb-[12px] pt-[12px] z-50 top-0 left-0 w-full ">
             <div className="w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto flex justify-between">
                 <Navigation lng={lng}  />
                 <LocationLink className="md:hidden" />

@@ -14,7 +14,7 @@ const i18nNamespaces = ['translation'];
 export default async function Home({ params: { lng }}) {
   return (
     <>
-      <div className="relative w-full min-h-screen bg-[url('/hero.webp')] md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="relative w-full h-[1000px] bg-[url('/hero.webp')] md:bg-[url('/hero-tablet.webp')] xl:bg-[url('/hero-desktop.webp')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-black-400">
           <Header lng={lng} />
           <Hero lng={lng} />

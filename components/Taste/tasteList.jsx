@@ -1,8 +1,17 @@
+import { useState, useEffect } from 'react';
 import initTranslations from '../../app/i18n';
 import { inter } from '@/fonts';
 
-const TasteList = async ({ lng, tasteTitle, tasteText, tasteTextSub }) => { 
-    const { t } = await initTranslations(lng, ['taste']);
+const TasteList = ({ lng, tasteTitle, tasteText, tasteTextSub }) => { 
+    const [t, setT] = useState(() => (key) => key);
+    useEffect(() => {
+            async function loadTranslations() {
+                const { t } = await initTranslations(lng, ['taste']);
+                setT(() => t);
+            }
+            loadTranslations();
+        }, [lng]);
+
     return (
         <div className='flex flex-col  w-[328px] md:w-[336px] xl:w-[272px] xlr:w-[304px] h-[244px] xl:h-[248px] p-[32px] rounded-[8px] bg-white-600'>
             <div className='flex '>

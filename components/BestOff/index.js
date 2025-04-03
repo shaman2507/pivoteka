@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -11,8 +12,18 @@ import beerCardData from './beerCardData';
 import BeerCard from './beerCard';
 import { SwiperBtn } from '../Buttons/SwiperBtn';
 
-const BestOff = async ({ lng }) => {
-    const { t } = await initTranslations(lng, ['bestOff']);
+const BestOff = ({ lng }) => {
+    const [t, setT] = useState(() => (key) => key);
+    const uniqueId = "best-off";
+
+    useEffect(() => {
+        async function loadTranslations() {
+            const { t } = await initTranslations(lng, ['bestOff']);
+            setT(() => t);
+        }
+        loadTranslations();
+    }, [lng]);
+
     return (
         <section id="best-offers" className='h-[900px] md:h-[872px] xl:h-[884px]'>
             <div className='flex justify-center md:justify-between md:items-center mt-[100px] md:mt-[124px] mb-[40px] md:mb-[44px]'>
@@ -20,7 +31,7 @@ const BestOff = async ({ lng }) => {
                     {t('bestOff.title')}
                 </h2>
                 <div className='hidden md:flex'>
-                    <SwiperBtn />
+                    <SwiperBtn uniqueId={uniqueId} />
                 </div>
             </div>
             
@@ -34,22 +45,17 @@ const BestOff = async ({ lng }) => {
                     spaceBetween={20}
                     slidesPerView={1}
                     breakpoints={{
-                        768: {
-                        slidesPerView: 2,
-                        },
-                        1280: {
-                        slidesPerView: 4,
-                        },
+                        768: { slidesPerView: 2 },
+                        1280: { slidesPerView: 4 },
                     }}
                     navigation={{
-                        nextEl: '.s-button-next',
-                        prevEl: '.s-button-prev',
+                        nextEl: `.s-button-next-${uniqueId}`,
+                        prevEl: `.s-button-prev-${uniqueId}`,
                     }}
                 >
                     {beerCardData.map((card, index) => (
                         <SwiperSlide key={index}>
-                            <BeerCard
-                                key={index} 
+                            <BeerCard 
                                 lng={lng} 
                                 image={card.image} 
                                 imageAlt={card.imageAlt}
@@ -61,7 +67,7 @@ const BestOff = async ({ lng }) => {
                     ))}
                 </Swiper>
                 <div className='mb-[100px] md:mb-[120px] md:hidden'>
-                    <SwiperBtn />
+                    <SwiperBtn uniqueId={uniqueId} />
                 </div>
             </div>
         </section>

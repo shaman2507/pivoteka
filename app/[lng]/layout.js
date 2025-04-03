@@ -32,10 +32,12 @@ const i18nNamespaces = [
   'contacts'
 ];
 
-export default async function RootLayout({ children, params: { lng } }) {
+export default async function RootLayout({ children, params }) {
+  const lng = params?.lng || 'en';
   const { t, resources } = await initTranslations(lng, i18nNamespaces);
+  
   return (
-    <html lang="en" dir={dir(lng)}>
+    <html lang={lng} dir={dir(lng)}>
       <body className={inter.className}>
         <TranslationsProvider namespaces={i18nNamespaces} locale={lng} resources={resources}>
           {children}

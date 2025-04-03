@@ -8,11 +8,23 @@ import { SwiperBtn } from '../Buttons/SwiperBtn';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useState, useEffect } from 'react';
 import BrandCard from './brandCard';
 import brandsCardData from './brandsCardData';
 
-const Brands = async ({ lng }) => { 
-    const { t } = await initTranslations(lng, ['brands']);
+const Brands = ({ lng }) => { 
+    const [t, setT] = useState(() => (key) => key);
+    const uniqueId = "brands";
+    
+    useEffect(() => {
+        async function loadTranslations() {
+            const { t } = await initTranslations(lng, ['brands']);
+            setT(() => t);
+        }
+        loadTranslations();
+    }, [lng]);
+
+
     return (
         <section className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto pt-[100px] md:pt-[120px]'>
             <div className='md:flex md:justify-between md:items-center'>
@@ -20,7 +32,7 @@ const Brands = async ({ lng }) => {
                     {t('brands.title')}
                 </h2>
                 <div className='hidden md:flex justify-baseline'>
-                    <SwiperBtn />
+                    <SwiperBtn uniqueId={uniqueId} />
                 </div>
             </div>
             
@@ -45,8 +57,8 @@ const Brands = async ({ lng }) => {
                         },
                     }}
                     navigation={{
-                        nextEl: '.s-button-next',
-                        prevEl: '.s-button-prev',
+                        nextEl: `.s-button-next-${uniqueId}`,
+                        prevEl: `.s-button-prev-${uniqueId}`,
                     }}
                 >
                     {brandsCardData.map((brand, index) => (
@@ -59,7 +71,7 @@ const Brands = async ({ lng }) => {
                     ))}
                 </Swiper>
                 <div className='mt-[40px] md:hidden '>
-                    <SwiperBtn />
+                    <SwiperBtn uniqueId={uniqueId} />
                 </div>
             </div>
         </section>

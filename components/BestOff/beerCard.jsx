@@ -1,9 +1,19 @@
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import initTranslations from '../../app/i18n';
 import { inter } from '@/fonts';
 
-const BeerCard = async ({ lng, image, imageAlt, cardTitle, cardPrice, cardSize }) => {
-    const { t } = await initTranslations(lng, ['bestOff']);
+const BeerCard = ({ lng, image, imageAlt, cardTitle, cardPrice, cardSize }) => {
+    const [t, setT] = useState(() => (key) => key);
+
+    useEffect(() => {
+        async function loadTranslations() {
+            const { t } = await initTranslations(lng, ['bestOff']);
+            setT(() => t);
+        }
+        loadTranslations();
+    }, [lng]);
+
     return (
         <div className='flex flex-col w-[328px] md:w-[335px] xl:w-[1160px] xlr:w-[1280px] h-[528px] md:h-[544px] xl:h-[546px] xlr:h-[624px] gap-[24px]'>
             <div className='w-[328px] md:w-[335px] xl:w-[300px] h-[420px] md:h-[432px] xl:h-[400px] flex justify-center'>

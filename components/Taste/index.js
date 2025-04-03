@@ -1,6 +1,7 @@
 'use client';
 
 import initTranslations from '../../app/i18n';
+import { useState, useEffect } from 'react';
 import { lora } from '@/fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -11,8 +12,18 @@ import 'swiper/css/pagination';
 import TasteList from './tasteList';
 import tasteListData from './tasteListData';
 
-const Taste = async ({ lng }) => { 
-    const { t } = await initTranslations(lng, ['taste']);
+const Taste = ({ lng }) => { 
+    const [t, setT] = useState(() => (key) => key);
+    const uniqueId = "taste";
+
+    useEffect(() => {
+        async function loadTranslations() {
+            const { t } = await initTranslations(lng, ['taste']);
+            setT(() => t);
+        }
+        loadTranslations();
+    }, [lng]);
+
     return (
         <section id="taste" className='h-[660px] bg-black-500'>
             <div className='w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] mx-auto'>
@@ -21,7 +32,7 @@ const Taste = async ({ lng }) => {
                         {t('taste.title')}
                     </h2>
                     <div className='hidden md:flex'>
-                        <SwiperBtn />
+                        <SwiperBtn uniqueId={uniqueId} />
                     </div>
                 </div>
                 <div className='mx-auto w-[328px] md:w-[688px] xl:w-[1160px] xlr:w-[1280px] h-[244px] md:mb-[120px]'>
@@ -42,8 +53,8 @@ const Taste = async ({ lng }) => {
                             },
                         }}
                         navigation={{
-                            nextEl: '.s-button-next',
-                            prevEl: '.s-button-prev',
+                            nextEl: `.s-button-next-${uniqueId}`,
+                            prevEl: `.s-button-prev-${uniqueId}`,
                         }}
                     >
                         {tasteListData.map((taste, index) => (
@@ -59,7 +70,7 @@ const Taste = async ({ lng }) => {
                         ))}
                     </Swiper>
                     <div className='mt-[40px] mb-[100px] md:hidden '>
-                        <SwiperBtn />
+                        <SwiperBtn uniqueId={uniqueId} />
                     </div>
                 </div>
             </div>  

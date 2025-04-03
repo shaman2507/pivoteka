@@ -15,7 +15,7 @@ const MenuBtn = () => {
             <button onClick={() => {
                 setVisibleBurgerMenu(true);
             }}
-            className="block mx-auto transition-all duration-300 hover:text-red-700 xl:hidden">
+            className="block mx-auto transition-all duration-300 text-yellow-500 hover:text-yellow-600 active:text-yellow-700 disabled:text-yellow-700 disabled:opacity-30 disabled:cursor-not-allowed xl:hidden">
                 <TbMenu size="24"/>
             </button>
             <BurgerMenu isVisible={visibleBurgerMenu} closeBurgerMenu={closeBurgerMenu} />

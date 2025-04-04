@@ -9,11 +9,11 @@ import { useClickOutside } from '@/hooks/hooks';
 
 const langList = [
     {
-        title: 'ENG',
+        title: 'EN',
         value: 'en',
     },
     {
-        title: 'MNE',
+        title: 'ME',
         value: 'me',
     },
 ];
@@ -53,35 +53,33 @@ const ChangeLang = () => {
     };
 
     const currentLang = langList.find(lang => lang.value === currentLocale);
-    const arrowIconStyle = {
-        transform: showLangList ? 'rotate(-180deg)' : 'rotate(0deg)',
-        transition: 'transform 0.3s ease',
-    };
 
     return (
-        <div className='my-auto w-[34px] text-white-500 border-b' >
+        <div className='my-auto w-[34px] text-white-500 ' >
             <button ref={buttonRef}
-                className="flex items-center"
+                className="flex items-center mx-auto hover:text-yellow-600 active:text-yellow-700 disabled:text-yellow-700 disabled:opacity-30 disabled:cursor-not-allowed transition-colors duration-200"
                 onClick={() => {
                     setShowLangList(!showLangList);
                 }}
             >
                 {currentLang && (
                     <>
-                        <span>{currentLang.title}</span>
+                        <span>
+                            {currentLang.title}
+                        </span>
                     </>
                 )} 
             </button>
             {showLangList && (
                 <div
                     ref={langListRef}
-                    className='absolute w-[75px]'
+                    className='absolute mt-[4px] w-[36px] text-[12px] rounded-xl border border-yellow-500 bg-black-0 p-[4px] flex flex-col gap-2 items-center'
                 >
                     {langList.map(lang => {
                         return (
                             <button
                                 key={lang.value}
-                                className={`flex ${lang.value === currentLocale ? 'border-b disabled' : ''}`}
+                                className={`flex hover:text-yellow-600 transition-colors duration-200 ${lang.value === currentLocale ? 'border-b disabled' : ''}`}
                                 onClick={() => handleChangeLocale(lang.value)}
                                 disabled={lang.value === currentLocale}
                             >
@@ -96,10 +94,3 @@ const ChangeLang = () => {
 };
 
 export default ChangeLang;
-
-
-{/* <div className='hidden xl:flex my-auto text-white-500 border-b' >
-    <Link className={`${className}`} href={`/${lng}`} onClick={onClick}>
-        {t('langSwitcher')}
-    </Link>
-</div> */}

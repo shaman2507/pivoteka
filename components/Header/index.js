@@ -20,7 +20,7 @@ const Header = ({ lng }) => {
                     <div className="flex">
                         <Logo className={'w-[80px] h-[80px]'} />
                     </div>
-                    <div className="md:flex justify-between gap-[32px]">
+                    <div className="md:flex justify-between gap-[24px]">
                         <LocationLink className="md:flex" />
                         <MenuBtn lng={lng} />
                         <div className="hidden xl:flex">

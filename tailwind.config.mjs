@@ -15,6 +15,7 @@ export default {
     extend: {
       colors: {
         black: {
+          200: 'rgba(0, 0, 0, 0.79)',
           300: 'rgba(0, 0, 0, 0.55)',
           400: 'rgba(0, 0, 0, 0.3)',
           500: 'rgba(29,29,29,0.85)',

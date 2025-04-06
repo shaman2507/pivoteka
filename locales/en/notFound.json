@@ -1,0 +1,6 @@
+{
+    "not-found": {
+        "error": "The page you are looking for does not exist",
+        "button": "Go to main page"
+    }
+}
